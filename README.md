@@ -8,7 +8,7 @@ On your root code execute:
 
 *docker build -t lcarlosrincon/hiberus-logistic .*
 
-*docker run -p 8020:8020 lcarlosrincon/hiberus-logistic*
+*docker run --name logistic -p 8020:8020 lcarlosrincon/hiberus-logistic*
 
 On your navigator put: http://localhost:8020/logistic
 ![](https://nonstoplearningbydoing.files.wordpress.com/2016/12/spring-boot-docker1.png?w=200)
