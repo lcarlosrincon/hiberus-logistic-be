@@ -1,9 +1,9 @@
 package com.hiberus.checkout.logistic.dto;
 
 import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
-
-import org.hibernate.validator.constraints.Range;
 
 import lombok.Data;
 
@@ -14,7 +14,8 @@ public class Product {
 	private Long id;
 
 	@NotNull
-	@Range(max = 100, min = 1)
+	@Min(1)
+	@Max(100)
 	private Long quantity;
 
 	@NotNull
